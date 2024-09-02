@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+service DataService {
+    rpc GetDevice (GetDeviceRequest) returns (Device);
+    rpc SetDevice (SetDeviceRequest) returns (Device);
+}
+
+message GetDeviceRequest {
+    string deviceId = 1;
+}
+
+message SetDeviceRequest {
+    string deviceId = 1;
+    string name = 2;
+    string notes = 3;
+}
+
+message Device {
+    string deviceId = 1;
+    string name = 2;
+    string notes = 3;
+}
+
