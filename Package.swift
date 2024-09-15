@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "grpc-service-template",
+    name: "Swift-PDF-Service",
     platforms: [
        .macOS(.v10_15)
     ],
@@ -29,7 +29,7 @@ let package = Package(
                 .unsafeFlags(["-cross-module-optimization"], .when(configuration: .release))
             ]
         ),
-        .target(name: "Run", dependencies: [.target(name: "App")]),
+        .target(name: "Swift-PDF-Service", dependencies: [.target(name: "App")]),
         .testTarget(name: "AppTests", dependencies: [
             .target(name: "App"),
             .product(name: "XCTVapor", package: "vapor"),
