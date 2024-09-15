@@ -1,5 +1,5 @@
-# grpc-service-template
-A Swift gRPC service template
+# Swift PDF Service
+A Swift gRPC PDF generation service
 
 Generate swift code from proto files using protoc
 
